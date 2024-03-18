@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Clima</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="box_page">
+        <div class="container_tab">
+            <header class="header">
+                <form class="container_search">
+                    <div class="input_group">
+                        <label for="city" class="label"><i class="bi bi-buildings"></i> City</label>
+                        <input type="text" class="input" id="city" name="city" placeholder="Example: Mexico">
+                    </div>                
+                    <div class="input_group">
+                        <label for="contry" class="label"><i class="bi bi-globe-americas"></i> Contry</label>
+                        <select name="contry" id="contry" class="date input">
+                            <option value="nothing" disabled="">PAISES</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="España">España</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Estados Unidos">Estados Unidos</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Rusia">Rusia</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="London">London</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn_search"><i class="bi bi-search"></i> Search</button>
+                </form>
+            </header>
+            <main class="main">
+                <section class="container_img">
+                    <img src="img/home1.png" alt="home3D" class="home_img">
+                </section>
+                <section class="container_data">
+                    <article class="col1">
+                        <div class="row1">
+                            <div class="contry option" id="contry"> <span id="h3_contry"><i class="bi bi-globe-americas"></i> Contry </span> </div>
+                            <div class="city option" id="city"> <span id="p_city"><i class="bi bi-buildings"></i> City </span> </div>
+                        </div>
+                        <div class="row2">
+                            <div class="grades option" id="max_grades"><i class="bi bi-caret-up-fill"></i> grades </div>
+                            <div class="grades option" id="min_grades"><i class="bi bi-caret-down-fill"></i> grades </div>
+                        </div>  
+                        <div class="row3">
+                            <div class="img_clime option" > 
+                                <img src="img/clime/lluvioso.png" alt="img_clima" id="img_clime">   
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col2">
+                        <div class="row1">
+                            <div class="description option"> 
+                                <span id="description"> Description </span> 
+                                <span id="wind_humidity"> Datos </span>  
+                                <span id="others"> Others </span>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </main>
+    
+        </div>    
+    </div>
+    <script src="index.js"></script>  
+</body>
+</html>
